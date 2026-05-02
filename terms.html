@@ -1,119 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditions d'utilisation - Interactive Singing Bowls</title>
-
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #ffffff;
-      color: #1d1d1f;
-      margin: 0;
-      padding: 40px 20px;
-    }
-
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .date {
-      color: #6e6e73;
-      font-size: 14px;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 18px;
-      margin-top: 28px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      margin: 8px 0;
-      color: #333;
-    }
-
-    .contact {
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation - Interactive Singing Bowls</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .last-update {
+            text-align: center;
+            color: #95a5a6;
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box p {
+            text-align: left;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            color: #856404;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h1>📋 Conditions Générales d'Utilisation</h1>
+            <p class="tagline">Interactive Singing Bowls</p>
+        </header>
 
-  <div class="container">
+        <div class="last-update">
+            Dernière mise à jour : 17 avril 2026
+        </div>
 
-    <h1>Conditions d'utilisation</h1>
-    <div class="date">Date d'entrée en vigueur : 2 mai 2026</div>
+        <section>
+            <h2>Article 1 — Éditeur de l'application</h2>
+            <div class="contact-info">
+                <p><strong>Nom :</strong> Quentin JEANDOT</p>
+                <p><strong>Adresse :</strong> 220 rue de Bonacre, 39570 Macornay, France</p>
+                <p><strong>Contact :</strong> <a href="mailto:quentinjeandot39@gmail.com">quentinjeandot39@gmail.com</a></p>
+            </div>
+        </section>
 
-    <p>Les présentes conditions d'utilisation régissent l'utilisation de l'application Interactive Singing Bowls, éditée par Quentin Jeandot.</p>
-    <p>En téléchargeant ou en utilisant l'application, vous acceptez d'être lié par ces conditions.</p>
+        <section>
+            <h2>Article 2 — Objet</h2>
+            <p>Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation de l'application mobile <strong>Interactive Singing Bowls</strong> (ci-après "l'Application").</p>
+            
+            <p>L'Application propose :</p>
+            <div class="info-box">
+                <ul>
+                    <li>Des bols tibétains interactifs pour la méditation et la relaxation</li>
+                    <li>Des voyages sonores pré-composés (nappes audio)</li>
+                    <li>Un mode multi-bols permettant de jouer plusieurs bols simultanément</li>
+                    <li>Une gestion des favoris</li>
+                </ul>
+            </div>
+            
+            <p>L'utilisation de l'Application implique l'acceptation pleine et entière des présentes CGU.</p>
+        </section>
 
-    <h2>1. Description du service</h2>
-    <p>L'application propose une expérience sonore interactive autour de bols tibétains, incluant des sons réels enregistrés, des interactions en temps réel et des séquences audio préenregistrées destinées à la relaxation.</p>
-    <p>L'application est destinée exclusivement à des fins de bien-être et de détente.</p>
+        <section>
+            <h2>Article 3 — Accès à l'application</h2>
+            
+            <h3>3.1 — Disponibilité</h3>
+            <p>L'Application est disponible gratuitement en téléchargement sur :</p>
+            <ul>
+                <li>Google Play Store (Android)</li>
+                <li>Apple App Store (iOS)</li>
+            </ul>
+            
+            <h3>3.2 — Prérequis techniques</h3>
+            <p>L'utilisateur doit disposer :</p>
+            <ul>
+                <li>D'un appareil mobile compatible (smartphone ou tablette)</li>
+                <li>D'un système d'exploitation compatible (Android ou iOS)</li>
+                <li>D'une connexion Internet (uniquement pour les achats intégrés et la vérification des abonnements)</li>
+            </ul>
+            
+            <h3>3.3 — Restrictions d'accès</h3>
+            <p>L'Éditeur se réserve le droit de refuser l'accès à l'Application, unilatéralement et sans notification préalable, à tout utilisateur ne respectant pas les présentes CGU.</p>
+        </section>
 
-    <h2>2. Accès et utilisation</h2>
-    <p>Vous vous engagez à utiliser l'application conformément aux lois en vigueur et aux règles des plateformes de distribution (Apple App Store, Google Play).</p>
+        <section>
+            <h2>Article 4 — Licence d'utilisation</h2>
+            
+            <h3>4.1 — Licence accordée</h3>
+            <p>L'Éditeur accorde à l'utilisateur une licence personnelle, non exclusive, non transférable et révocable d'utilisation de l'Application.</p>
+            
+            <h3>4.2 — Restrictions</h3>
+            <div class="warning-box">
+                <p><strong>Il est formellement interdit de :</strong></p>
+                <ul>
+                    <li>Copier, modifier, distribuer, vendre ou louer l'Application ou toute partie de celle-ci</li>
+                    <li>Procéder à de l'ingénierie inverse (reverse engineering), décompiler ou désassembler l'Application</li>
+                    <li>Extraire les fichiers audio ou visuels de l'Application</li>
+                    <li>Utiliser l'Application à des fins commerciales sans autorisation écrite</li>
+                    <li>Créer des œuvres dérivées basées sur l'Application</li>
+                </ul>
+            </div>
+            
+            <h3>4.3 — Propriété intellectuelle</h3>
+            <p>Tous les éléments de l'Application (sons, images, textes, design, code source, etc.) sont et demeurent la propriété exclusive de l'Éditeur ou de ses ayants droit.</p>
+            
+            <p>Toute utilisation non autorisée de ces éléments constitue une contrefaçon passible de sanctions civiles et pénales.</p>
+        </section>
 
-    <h2>3. Fonctionnalités gratuites et payantes</h2>
-    <p>L'application propose une version gratuite avec un accès limité ainsi que des offres payantes :</p>
-    <p>- Abonnement mensuel<br>
-       - Abonnement annuel<br>
-       - Achat à vie (paiement unique)</p>
-    <p>Les versions payantes permettent de débloquer l'ensemble des contenus et fonctionnalités.</p>
+        <section>
+            <h2>Article 5 — Fonctionnalités et contenu</h2>
+            
+            <h3>5.1 — Version gratuite</h3>
+            <p>La version gratuite de l'Application permet d'accéder à :</p>
+            <ul>
+                <li>3 bols tibétains</li>
+                <li>2 voyages sonores</li>
+                <li>Mode multi-bols limité à 2 bols simultanés</li>
+                <li>Gestion des favoris</li>
+            </ul>
+            
+            <h3>5.2 — Version Premium</h3>
+            <p>La version Premium débloque :</p>
+            <ul>
+                <li>Accès à tous les bols tibétains (20+)</li>
+                <li>Accès à tous les voyages sonores</li>
+                <li>Mode multi-bols étendu jusqu'à 4 bols simultanés</li>
+            </ul>
+            
+            <h3>5.3 — Évolution du contenu</h3>
+            <p>L'Éditeur se réserve le droit de modifier, ajouter ou supprimer des fonctionnalités ou du contenu sans préavis.</p>
+        </section>
 
-    <h2>4. Abonnements</h2>
-    <p>Les abonnements sont gérés par les plateformes Apple et Google.</p>
-    <p>Ils sont renouvelés automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours.</p>
-    <p>La gestion et la résiliation des abonnements s'effectuent via les paramètres de votre compte sur la plateforme utilisée.</p>
-    <p>L'achat à vie est un paiement unique sans renouvellement.</p>
+        <section>
+            <h2>Article 6 — Achats intégrés et abonnements</h2>
+            
+            <h3>6.1 — Options d'achat</h3>
+            <p>L'Application propose plusieurs options d'achat pour accéder à la version Premium :</p>
+            <ul>
+                <li><strong>Abonnement mensuel :</strong> renouvelé automatiquement chaque mois</li>
+                <li><strong>Abonnement annuel :</strong> renouvelé automatiquement chaque année</li>
+                <li><strong>Achat à vie :</strong> achat unique donnant accès permanent aux fonctionnalités Premium</li>
+            </ul>
+            
+            <h3>6.2 — Tarification</h3>
+            <p>Les prix sont affichés dans l'Application et peuvent varier selon le pays et la devise locale.</p>
+            
+            <p>Les prix incluent toutes les taxes applicables.</p>
+            
+            <h3>6.3 — Paiement</h3>
+            <p>Les paiements sont gérés par :</p>
+            <ul>
+                <li>Apple (via l'App Store) pour iOS</li>
+                <li>Google (via Google Play) pour Android</li>
+            </ul>
+            
+            <p>L'Éditeur n'a pas accès aux informations bancaires de l'utilisateur.</p>
+            
+            <h3>6.4 — Renouvellement automatique</h3>
+            <p>Les abonnements sont renouvelés automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours.</p>
+            
+            <p>Le compte de l'utilisateur sera débité dans les 24 heures précédant la fin de la période en cours.</p>
+            
+            <h3>6.5 — Annulation</h3>
+            <p>L'utilisateur peut annuler son abonnement à tout moment via :</p>
+            <ul>
+                <li><strong>iOS :</strong> Réglages > [nom] > Abonnements</li>
+                <li><strong>Android :</strong> Google Play Store > Paiements et abonnements > Abonnements</li>
+            </ul>
+            
+            <p>L'annulation prend effet à la fin de la période d'abonnement en cours. Aucun remboursement partiel n'est effectué.</p>
+            
+            <h3>6.6 — Remboursements</h3>
+            <div class="highlight-box">
+                <p><strong>Les demandes de remboursement doivent être adressées directement à :</strong></p>
+                <ul>
+                    <li>Apple (pour iOS) : <a href="https://support.apple.com/HT202039" target="_blank" style="color: white; text-decoration: underline;">support.apple.com</a></li>
+                    <li>Google (pour Android) : <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" style="color: white; text-decoration: underline;">support.google.com</a></li>
+                </ul>
+            </div>
+            
+            <p>L'Éditeur ne gère aucun remboursement directement.</p>
+            
+            <h3>6.7 — Restauration des achats</h3>
+            <p>Les achats peuvent être restaurés sur plusieurs appareils utilisant le même compte Apple ou Google via la fonction "Restaurer les achats" disponible dans les paramètres de l'Application.</p>
+        </section>
 
-    <h2>5. Paiements</h2>
-    <p>Les paiements sont traités par des services tiers (Apple, Google) et gérés via RevenueCat.</p>
-    <p>Aucune donnée bancaire n'est stockée par l'éditeur de l'application.</p>
+        <section>
+            <h2>Article 7 — Responsabilités</h2>
+            
+            <h3>7.1 — Utilisation de l'Application</h3>
+            <p>L'utilisateur utilise l'Application sous sa seule responsabilité.</p>
+            
+            <div class="warning-box">
+                <p><strong>L'Application n'est pas :</strong></p>
+                <ul>
+                    <li>Un dispositif médical</li>
+                    <li>Un outil de diagnostic ou de traitement médical</li>
+                    <li>Un substitut à un avis médical professionnel</li>
+                </ul>
+                <p>En cas de problème de santé physique ou mentale, consultez un professionnel de santé qualifié.</p>
+            </div>
+            
+            <h3>7.2 — Disponibilité</h3>
+            <p>L'Éditeur s'efforce d'assurer la disponibilité de l'Application 24h/24 et 7j/7, mais ne peut garantir une disponibilité continue.</p>
+            
+            <p>L'Application peut être temporairement indisponible en raison de :</p>
+            <ul>
+                <li>Opérations de maintenance</li>
+                <li>Mises à jour</li>
+                <li>Pannes techniques</li>
+                <li>Cas de force majeure</li>
+            </ul>
+            
+            <h3>7.3 — Limitation de responsabilité</h3>
+            <p>L'Éditeur ne saurait être tenu responsable :</p>
+            <ul>
+                <li>Des dommages directs ou indirects résultant de l'utilisation de l'Application</li>
+                <li>De l'impossibilité d'utiliser l'Application</li>
+                <li>Des erreurs ou interruptions dans le fonctionnement de l'Application</li>
+                <li>De la perte de données</li>
+                <li>Des dommages causés par des virus ou autres éléments nuisibles</li>
+            </ul>
+            
+            <h3>7.4 — Contenu audio</h3>
+            <p>Les sons de bols tibétains sont fournis à des fins de relaxation et de méditation.</p>
+            
+            <p>Il est recommandé d'utiliser l'Application à un volume sonore raisonnable pour éviter tout dommage auditif.</p>
+        </section>
 
-    <h2>6. Utilisation autorisée</h2>
-    <p>Il est interdit de :</p>
-    <p>- Utiliser l'application à des fins illégales<br>
-       - Tenter de modifier, détourner ou exploiter le fonctionnement de l'application<br>
-       - Porter atteinte à son bon fonctionnement</p>
+        <section>
+            <h2>Article 8 — Données personnelles</h2>
+            <p>Le traitement des données personnelles est régi par la Politique de Confidentialité disponible à l'adresse suivante :</p>
+            <p><a href="https://kostaquent.github.io/Interactive-singing-bowls/privacy-policy.html" target="_blank">https://kostaquent.github.io/Interactive-singing-bowls/privacy-policy.html</a></p>
+            
+            <p>L'Application ne collecte aucune donnée personnelle directement.</p>
+        </section>
 
-    <h2>7. Propriété intellectuelle</h2>
-    <p>L'ensemble des contenus (sons, enregistrements, visuels, conception) est protégé et reste la propriété exclusive de Quentin Jeandot.</p>
-    <p>Toute reproduction ou utilisation sans autorisation est interdite.</p>
+        <section>
+            <h2>Article 9 — Modification des CGU</h2>
+            <p>L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment.</p>
+            
+            <p>Les CGU modifiées entrent en vigueur dès leur publication dans l'Application ou sur le site web de l'Éditeur.</p>
+            
+            <p>Il est recommandé à l'utilisateur de consulter régulièrement les CGU pour prendre connaissance des éventuelles modifications.</p>
+            
+            <p>L'utilisation continue de l'Application après modification des CGU vaut acceptation des nouvelles conditions.</p>
+        </section>
 
-    <h2>8. Avertissement</h2>
-    <p>L'application est fournie "en l'état", sans garantie d'aucune sorte.</p>
-    <p>Elle ne constitue pas un dispositif médical ni un outil thérapeutique et ne remplace pas un avis professionnel.</p>
+        <section>
+            <h2>Article 10 — Résiliation</h2>
+            
+            <h3>10.1 — Par l'utilisateur</h3>
+            <p>L'utilisateur peut cesser d'utiliser l'Application et la désinstaller à tout moment.</p>
+            
+            <h3>10.2 — Par l'Éditeur</h3>
+            <p>L'Éditeur se réserve le droit de suspendre ou résilier l'accès à l'Application pour tout utilisateur ne respectant pas les présentes CGU, sans préavis ni indemnité.</p>
+        </section>
 
-    <h2>9. Limitation de responsabilité</h2>
-    <p>Dans les limites autorisées par la loi, l'éditeur ne pourra être tenu responsable de dommages indirects ou liés à l'utilisation de l'application.</p>
+        <section>
+            <h2>Article 11 — Droit applicable et juridiction</h2>
+            <p>Les présentes CGU sont régies par le droit français.</p>
+            
+            <p>En cas de litige relatif à l'interprétation ou à l'exécution des présentes CGU, et à défaut d'accord amiable, les tribunaux français seront seuls compétents.</p>
+            
+            <p>Conformément aux dispositions du Code de la consommation, l'utilisateur consommateur peut recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable du litige.</p>
+        </section>
 
-    <h2>10. Modifications</h2>
-    <p>L'éditeur se réserve le droit de modifier à tout moment l'application ou les présentes conditions.</p>
+        <section>
+            <h2>Article 12 — Contact</h2>
+            <p>Pour toute question relative aux présentes CGU ou à l'utilisation de l'Application, l'utilisateur peut contacter l'Éditeur à l'adresse suivante :</p>
+            
+            <div class="contact-info">
+                <p><strong>Email :</strong> <a href="mailto:quentinjeandot39@gmail.com">quentinjeandot39@gmail.com</a></p>
+                <p><strong>Adresse postale :</strong> 220 rue de Bonacre, 39570 Macornay, France</p>
+            </div>
+        </section>
 
-    <h2>11. Contact</h2>
-    <div class="contact">
-      <p>Quentin Jeandot<br>
-      quentinjeandot39@gmail.com<br>
-      220 rue de Bonacre<br>
-      39570 Macornay<br>
-      France</p>
+        <div class="footer">
+            <p>© 2026 Quentin JEANDOT — Interactive Singing Bowls</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Tous droits réservés</p>
+        </div>
     </div>
-
-  </div>
-
 </body>
 </html>
