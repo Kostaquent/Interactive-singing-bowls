@@ -5,20 +5,35 @@
   <title>Téléchargement</title>
 
   <script>
-    function redirect() {
-      const ua = navigator.userAgent || navigator.vendor;
+    function isIOS() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
 
+      // iPhone / iPod / anciens iPad
+      if (/iPhone|iPod/.test(ua)) return true;
+      if (/iPad/.test(ua)) return true;
+
+      // iPadOS récents (qui se font passer pour Mac)
+      if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
+
+      return false;
+    }
+
+    function isAndroid() {
+      return /Android/i.test(navigator.userAgent);
+    }
+
+    function redirect() {
       const playStore = "https://play.google.com/store/apps/details?id=com.kostaquent.bolstibetains";
       const appStore = "https://apps.apple.com/fr/app/interactive-singing-bowls/id6763084403";
 
-      if (/android/i.test(ua)) {
+      if (isAndroid()) {
         window.location.href = playStore;
       } 
-      else if (/iPad|iPhone|iPod/.test(ua)) {
+      else if (isIOS()) {
         window.location.href = appStore;
       } 
       else {
-        document.body.innerHTML = "<h2>Une erreur est survenue, merci de réessayer.</h2>";
+        document.body.innerHTML = "<h2>Une erreur est survenue, essayez plus tard.</h2>";
       }
     }
   </script>
