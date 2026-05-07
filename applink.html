@@ -19,8 +19,11 @@
     }
 
     function isAndroid() {
-      return /Android/i.test(navigator.userAgent);
-    }
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  return /Android/i.test(ua)
+    || /Linux/i.test(ua) && 'ontouchstart' in window;
+}
 
     function redirect() {
       const playStore = "https://play.google.com/store/apps/details?id=com.kostaquent.bolstibetains";
